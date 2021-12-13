@@ -169,6 +169,7 @@ def presupuesto(req):
     output = ''
     for child in children:
         try:
+            # hola
             image_link = child.find('img', {'class':'img-responsive'}).get('src')
             title = child.find('p',{'class':'product-desc'}).text
             price = child.find('span', {'class':'price product-price'}).text
